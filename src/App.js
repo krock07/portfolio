@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import HomePageSections from "./Components/HomepageSections";
+import Hero from "./Hero.css";
+import Layout from "./Layout";
+import "./App.css";
+import { getContentfulNav } from "./Queries/index";
+// import * as headings from './Styles/type';
 
 function App() {
+  let [data, setData] = useState({});
+
+  const getData = async () => {
+    const theData = await getContentfulNav();
+    setData(theData);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+  if (data.fields) {
+    return (
+      <Layout>
+        <div class="heroimage">
+          <div class="captioncontainer">
+            <h1 class="captiontitle">{data.fields.websiteTitle}</h1>
+            <h2 class="captiontitle">{data.fields.websiteSubtitle}</h2>
+          </div>
+        </div>
+        <HomePageSections />
+      </Layout>
+    );
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <div>...loading</div>
+    </Layout>
   );
 }
 
