@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
-
+import RichText from './RichText';
 import { getContentfulHomepage } from "../Queries/index";
+import '../Hero.css'
+import ProjectThumbnails from "./ProjectThumbnails";
+import {GridContainer} from '../Styles/layout'
 
-const HomePageSections = () => {
+const HomepageSections = () => {
   const [data, setData] = useState({});
 
   const getData = async () => {
@@ -17,35 +20,38 @@ const HomePageSections = () => {
 
   if (Object.entries(data).length > 0) {
     return (
-      <main>
-        {data.fields.homepageSection.map((section) => {
-          const { sectionTitle, textContent, projects } = section.fields;
-          console.log(section.fields);
+      <section id="main">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+          {data.fields.homepageSection.map((section) => {
+          const { sectionTitle, projects } = section.fields;
+          console.log(section);
           return (
+           
             <section>
-              <h2>{sectionTitle}</h2>
+                <header className="major">
+                <h2>{sectionTitle}</h2>
+                </header>
               {/* {textContent && <RichText content={textContent} />} */}
               {projects && (
-                <div>
+                <div className="row">
                   {projects.map((project, i) => {
-                    return (
-                      <div>
-                        <h3>{project.fields.title}</h3>
-                        <img
-                          src={project.fields.thumbnail.fields.file.url}
-                          alt={project.fields.thumbnail.fields.title}
-                        />
-                      </div>
-                    );
+                    return <ProjectThumbnails project={project}/>
                   })}
                 </div>
               )}
             </section>
           );
-        })}
-      </main>
+        })} 
+          </div>
+         </div>
+        </div>
+      </section>
     );
   }
   return <div>...loading</div>;
 };
-export default HomePageSections;
+export default HomepageSections;
+
+
