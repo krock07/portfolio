@@ -24,6 +24,7 @@ const ProjectThumbnails = (props) => {
             </ul>
           </footer>   
       </section> 
+      
 </div>
   
   

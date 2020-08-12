@@ -25,7 +25,7 @@ const HomepageSections = () => {
           <div className="row">
             <div className="col-12">
           {data.fields.homepageSection.map((section) => {
-          const { sectionTitle, projects } = section.fields;
+          const { sectionTitle, projects, skills } = section.fields;
           console.log(section);
           return (
            
@@ -33,7 +33,7 @@ const HomepageSections = () => {
                 <header className="major">
                 <h2>{sectionTitle}</h2>
                 </header>
-              {/* {textContent && <RichText content={textContent} />} */}
+              {skills }
               {projects && (
                 <div className="row">
                   {projects.map((project, i) => {
