@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css"
+import Form from 'react-bootstrap/Form';
 
 class Contact extends Component {
 state = {
@@ -22,9 +23,9 @@ e.preventDefault();
 emailjs
 .sendForm(
 "gmail",
-"bruno_portfolio_message",
+"khoury_portfolio_message",
 "#contactForm",
-"user_blablaOwC88fGfGfahg"
+"user_xZCvNCWNvoBWJdAp3hvm3"
 )
 .then()
 .catch();
@@ -44,7 +45,7 @@ return (
     <div className="contact-section" id="contact">
 
 <section id="contactme">
-<h1 className="contact-title">Say Olá</h1>
+<h1 className="contact-title">Say Hello</h1>
 <div className="wrapper-contact">
 <div className="contact ">
 {this.state.messageSent ? (
@@ -56,6 +57,7 @@ Your Message has been sent
 )}
 
             <form
+                
               onSubmit={this.handleSubmit}
               className="animated delay-1s fadeInRight"
               id="contactForm"

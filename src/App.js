@@ -36,10 +36,12 @@ function App() {
             </div>
           </div>
         </div>
+     
         <HomepageSections />
         <Skills />
         <About/>
         <Contact/>
+        
       </>
     );
   }
