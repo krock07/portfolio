@@ -9,6 +9,7 @@ import "./App.css";
 import { getContentfulNav } from "./Queries/index";
 import Skills from "./Components/Skills";
 import Navigation from "./Components/Nav/Navigation";
+import Contact from "./Components/Form/Contact";
 
 // import * as headings from './Styles/type';
 
@@ -38,6 +39,7 @@ function App() {
         <HomepageSections />
         <Skills />
         <About/>
+        <Contact/>
       </>
     );
   }

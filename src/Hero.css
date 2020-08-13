@@ -92,7 +92,7 @@ h2.captiontitle {
 
 @media(max-width:500px){
 h2.captiontitle {
-  margin-top: -5vw;
+  margin-top: -1vw;
   font-family: avenir;
   font-weight: 100;
   letter-spacing: .75vw;
@@ -361,6 +361,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		margin: 20px;
 	}
 
 /* Container */

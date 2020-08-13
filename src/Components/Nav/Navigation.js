@@ -56,6 +56,18 @@ class Navigation extends Component {
              About
               </Link>
               </li>
+              <li className="nav-item">
+              <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+             Contact
+              </Link>
+              </li>
              
           </ul>
         </div>
