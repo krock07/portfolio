@@ -4,6 +4,7 @@ import { getContentfulHomepage } from "../Queries/index";
 import '../Hero.css'
 import ProjectThumbnails from "./ProjectThumbnails";
 import {GridContainer} from '../Styles/layout'
+import uuid from 'react-uuid'
 
 const HomepageSections = () => {
   const [data, setData] = useState({});
@@ -20,7 +21,8 @@ const HomepageSections = () => {
 
   if (Object.entries(data).length > 0) {
     return (
-      <section id="main">
+      <div className="homepage-section" id="homepagesections" key={uuid()} >
+      <section id="main" >
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -29,7 +31,7 @@ const HomepageSections = () => {
           console.log(section);
           return (
            
-            <section>
+            <section key={uuid()}>
                 <header className="major">
                 <h2>{sectionTitle}</h2>
                 </header>
@@ -37,7 +39,7 @@ const HomepageSections = () => {
               {projects && (
                 <div className="row">
                   {projects.map((project, i) => {
-                    return <ProjectThumbnails project={project}/>
+                    return <ProjectThumbnails project={project} key={uuid()}/>
                   })}
                 </div>
               )}
@@ -48,6 +50,7 @@ const HomepageSections = () => {
          </div>
         </div>
       </section>
+      </div>
     );
   }
   return <div>...loading</div>;

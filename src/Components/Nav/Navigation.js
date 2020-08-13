@@ -1,22 +1,71 @@
-import React from 'react';
-import './Navigation.css'
+import React, { Component } from 'react';
+import kslogo from "../../kslogo-01.svg";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-const Navigation = () => {
+
+class Navigation extends Component {
+
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+  
+  render() {
     return (
-      <section className="flex height-fix">
-        <nav class="flex desk">
-            <div class="link-wrap">
-              <div class="page-link active" dest="home">home</div>
-              <div class="page-link" dest="about">about</div>
-              <div class="page-link" dest="portfolio">portfolio</div>
-              <div class="page-link" dest="contact">contact</div>
-            </div>
-            <i class="mdi mdi-menu"></i>
-          </nav>
-
-      </section>
-        
+      <nav className="nav" id="navbar">
+        <div className="nav-content">
+          <img
+            src={kslogo}
+            className="nav-logo"
+            alt="Logo."
+            onClick={this.scrollToTop}
+          />
+          <ul className="nav-items">
+            <li className="nav-item">
+              <Link 
+              activeClass="active"
+              to="homepagesections"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              >
+                Portfolio
+                </Link>
+                </li>
+           <li className="nav-item">
+              <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Skills
+              </Link>
+              </li>
+              <li className="nav-item">
+              <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+             About
+              </Link>
+              </li>
+             
+          </ul>
+        </div>
+      </nav>
     );
+  }
+}
+
+Navigation.propTypes = {
+
 };
 
 export default Navigation;

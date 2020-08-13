@@ -340,8 +340,8 @@ input, select, textarea {
 	}
 
 	a {
-		color: #d52349;
-		text-decoration: underline;
+		color:white;
+		text-decoration: none;
 	}
 
 		a:hover {

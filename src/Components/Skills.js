@@ -6,6 +6,7 @@ import rails from '../images/rails.svg'
 import ruby from '../images/ruby.svg'
 const Skills = () => {
     return (
+        <div className="skills-section" id="skills">
         <section id="intro" class="container">
         <div class="row">
             <div class="col-4 col-12-medium">
@@ -53,6 +54,7 @@ const Skills = () => {
             
         </div>
     </section>
+    </div>
     );
 };
 
