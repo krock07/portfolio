@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 :root {
@@ -10,7 +10,7 @@
   --light-mode-bg: linear-gradient(to top left, #ffffff, #cfd2d6) !important;
   --background: var(--light-mode-bg);
   --foreground: var(--title-dark-gray-color);
-}
+} */
 
 /*=======================================
 ==> General Dark and Light Mode classes
@@ -32,23 +32,23 @@ body {
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   user-select: none;
-} */
+}
 
 #root {
-  /* overflow: hidden !important; */
-  /* overflow-y: hidden !important; */
-  /* overflow-x: hidden !important; */
-  /* margin: 0;
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  margin: 0;
   padding: 0;
   width: 99.9%;
   height: 100vh;
-  will-change: transform, opacity; */
-}
+  will-change: transform, opacity;
+} */
 
 /*------------------------
 => Contact Page
 --------------------------*/
-#contactme {
+/* #contactme {
   margin: 3rem;
   padding: 3rem;
   display: flex;
@@ -56,19 +56,7 @@ body {
   align-items: center;
   width: 80vw;
 }
-@media screen and(max-width:640px) {
-    #contactme {
-        margin: 1rem;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 80vw;
-
-    }
-}
 .contact-title {
-    
   font-size: 7rem;
   text-transform: uppercase;
   margin: 0 !important;
@@ -170,7 +158,7 @@ body {
 .toggle-button,
 .side-draw-button {
   display: none;
-}
+} */
 
 /*
 =======================================
@@ -178,7 +166,7 @@ body {
 =========================================
 */
 
-.animated {
+/* .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -192,54 +180,54 @@ body {
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-}
+} */
 
 /************************
 =       Fade Right
 *************************/
-@-webkit-keyframes fadeInRight {
+/* @-webkit-keyframes fadeInRight {
   from {
-    opacity: 0;
+    opacity: 0; */
     /*-webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
+    /* -webkit-transform: translate3d(50px, 0, 0);
     transform: translate3d(50px, 0, 0);
-  }
+  } */
 
-  to {
+  /* to {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
-}
+} */
 
-@keyframes fadeInRight {
+/* @keyframes fadeInRight {
   from {
-    opacity: 0;
+    opacity: 0; */
     /*-webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
+    /* -webkit-transform: translate3d(50px, 0, 0);
     transform: translate3d(50px, 0, 0);
-  }
+  } */
 
-  to {
+  /* to {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
-}
+} */
 
 /************************
 =       Fade Left
 *************************/
-@-webkit-keyframes fadeInLeft {
+/* @-webkit-keyframes fadeInLeft {
   from {
-    opacity: 0;
+    opacity: 0; */
     /*-webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);*/
     -webkit-transform: translate3d(-50px, 0, 0);
     transform: translate3d(-50px, 0, 0);
-  }
+  /* }
 
   to {
     opacity: 1;
@@ -250,10 +238,10 @@ body {
 
 @keyframes fadeInLeft {
   from {
-    opacity: 0;
+    opacity: 0; */
     /*-webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
+    /* -webkit-transform: translate3d(-50px, 0, 0);
     transform: translate3d(-50px, 0, 0);
   }
 
@@ -262,7 +250,7 @@ body {
     -webkit-transform: none;
     transform: none;
   }
-}
+} */
 
 
 /*
@@ -270,3 +258,246 @@ body {
 ==>        END-Animations
 =======================================
 */
+
+input {
+    outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 33px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .input--style-3 {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #ccc;
+    background: transparent;
+  }
+  
+  .input--style-3::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #ccc;
+  }
+  
+  .input--style-3:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    opacity: 1;
+  }
+  
+  .input--style-3::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+    opacity: 1;
+  }
+  
+  .input--style-3:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+  }
+  
+  .input--style-3:-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc;
+  }
+
+  button {
+    outline: none;
+    background: none;
+    border: none;
+  }
+
+  .btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 33px;
+    font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 18px;
+  }
+  
+  .btn--radius {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  
+  .btn--pill {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+  
+  .btn--green {
+    background: #57b846;
+  }
+  
+  .btn--green:hover {
+    background: #4dae3c;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+  
+  .wrapper--w960 {
+    max-width: 960px;
+  }
+  
+  .wrapper--w780 {
+    max-width: 780px;
+  }
+  
+  .wrapper--w680 {
+    max-width: 680px;
+  }
+
+  .p-t-100 {
+    padding-top: 100px;
+  }
+  
+  .p-t-180 {
+    padding-top: 180px;
+  }
+  
+  .p-t-20 {
+    padding-top: 20px;
+  }
+  
+  .p-t-10 {
+    padding-top: 10px;
+  }
+  
+  .p-t-30 {
+    padding-top: 30px;
+  }
+  
+  .p-b-100 {
+    padding-bottom: 100px;
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+  }
+
+  body {
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  h5 {
+    font-size: 15px;
+  }
+  
+
+  h6 {
+    font-size: 13px;
+  }
+
+  .bg-blue {
+    background: #2c6ed5;
+  }
+  
+  .bg-red {
+    background: #fa4251;
+  }
+  
+  .bg-gra-01 {
+    background: -webkit-gradient(linear, left bottom, left top, from(#a7a4a6), to(#3f3d45));
+    background: -webkit-linear-gradient(bottom, #a7a4a6 0%, #3f3d45 100%);
+    background: -moz-linear-gradient(bottom, #a7a4a6 0%, #3f3d45 100%);
+    background: -o-linear-gradient(bottom, #a7a4a6 0%, #3f3d45 100%);
+    background: linear-gradient(to top,#a7a4a6 0%, #3f3d45 100%);
+  }
+
+  .card {
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+  }
+  
+  .card-3 {
+    background: #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: table;
+  }
+
+  .card-3 .card-heading {
+    background: url("https://images.unsplash.com/photo-1558495122-89ba11e1f697?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") top/cover no-repeat;
+    display: table-cell;
+    width: 50%;
+  }
+
+  .card-3 .card-body {
+    padding: 57px 65px;
+    padding-bottom: 65px;
+    display: table-cell;
+  }
+  
+  @media (max-width: 767px) {
+    .card-3 {
+      display: block;
+    }
+    .card-3 .card-heading {
+      display: block;
+      width: 100%;
+      padding-top: 400px;
+      background-position: center center;
+    }
+    .card-3 .card-body {
+      display: block;
+      width: 100%;
+      padding: 37px 30px;
+      padding-bottom: 45px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 36px;
+  }

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Contact.css"
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 
 class Contact extends Component {
 state = {
@@ -42,11 +42,16 @@ emailjs
 
 render() {
 return (
-    <div className="contact-section" id="contact">
+    <div className="page-wrapper bg-gra-01 p-t-180 p-b-100" id="contact">
+        <div class="wrapper wrapper--w780">
 
-<section id="contactme">
-<h1 className="contact-title">Say Hello</h1>
+{/* <section id="contactme">
+<h1 className="contact-title">Say Hello</h1> */}
 <div className="wrapper-contact">
+<div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 className="title">Say Hello</h2>
 <div className="contact ">
 {this.state.messageSent ? (
 <div className="alert animated fadeInUp">
@@ -62,8 +67,10 @@ Your Message has been sent
               className="animated delay-1s fadeInRight"
               id="contactForm"
             >
-              <p>
+                <div class="input-group">
+              
                 <input
+                  className="input--style-3"
                   name="name"
                   type="text"
                   placeholder="Full Name"
@@ -72,13 +79,13 @@ Your Message has been sent
                   value={this.state.name}
                   onChange={this.handleChange}
                 />
-                <span className="required">
-                  <FontAwesomeIcon icon={faCircle} />
-                </span>
-              </p>
-              <br />
-              <p>
+              
+              </div>
+              {/* <br /> */}
+              <div class="input-group">
+            
                 <input
+                className="input--style-3"
                   name="email"
                   type="email"
                   placeholder="E-mail Address"
@@ -87,13 +94,13 @@ Your Message has been sent
                   value={this.state.email}
                   onChange={this.handleChange}
                 />
-                <span className="required">
-                  <FontAwesomeIcon icon={faCircle} />
-                </span>
-              </p>
-              <br />
-              <p>
+             
+              </div>
+              {/* <br /> */}
+              <div class="input-group">
+             
                 <input
+                 className="input--style-3"
                   name="subject"
                   type="text"
                   placeholder="Subject"
@@ -101,8 +108,11 @@ Your Message has been sent
                   value={this.state.subject}
                   onChange={this.handleChange}
                 />
-              </p>
-              <p>
+              
+              </div>
+              <div class="input-group">
+              
+            
                 <textarea
                   name="message"
                   type="text"
@@ -113,23 +123,27 @@ Your Message has been sent
                   id="form-message"
                   required
                 ></textarea>
-                <span className="required">
-                  <FontAwesomeIcon icon={faCircle} />
-                </span>
-              </p>
-              <br />
+            
+              </div>
+            
+              <div class="p-t-10">
               <p id="btn-form">
                 <input
                   onClick={this.successMessage}
                   type="submit"
                   name="submit"
+                  className="btn btn--pill btn--green"
                 />
               </p>
+              </div>
               <br />
             </form>
           </div>
         </div>
-      </section>
+        </div>
+      {/* </section> */}
+      </div>
+      </div>
       </div>
     );
 
