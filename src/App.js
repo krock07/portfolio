@@ -10,7 +10,7 @@ import { getContentfulNav } from "./Queries/index";
 import Skills from "./Components/Skills";
 import Navigation from "./Components/Nav/Navigation";
 import Contact from "./Components/Form/Contact";
-
+import Footer from "./Components/Footer/Footer"
 // import * as headings from './Styles/type';
 
 function App() {
@@ -41,6 +41,7 @@ function App() {
         <Skills />
         <About/>
         <Contact/>
+        <Footer/>
         
       </>
     );

@@ -1914,10 +1914,11 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		padding-left: 1em;
+		margin-right: 1em;
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 0.3em;
 		}
 
 	ol {
