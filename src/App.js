@@ -7,7 +7,7 @@ import About from './Components/About/About'
 import { Route, Switch, Router, Link } from "react-router-dom";
 import "./App.css";
 import { getContentfulNav } from "./Queries/index";
-import Skills from "./Components/Skills";
+import Skills from "./Components/Skills/Skills";
 import Navigation from "./Components/Nav/Navigation";
 import Contact from "./Components/Form/Contact";
 import Footer from "./Components/Footer/Footer"
