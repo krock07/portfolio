@@ -275,18 +275,19 @@ input {
     position: relative;
     margin-bottom: 33px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
   }
 
   .input--style-3 {
     padding: 5px 0;
     font-size: 16px;
-    color: #ccc;
+    color: #50fa7b;
     background: transparent;
   }
   
   .input--style-3::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #ccc;
+    color: #50fa7b;
   }
   
   .input--style-3:-moz-placeholder {

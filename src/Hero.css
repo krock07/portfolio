@@ -2,13 +2,13 @@
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic"); */
 
 
-
+/* hero image */
 .heroimage {
   background-image: url(https://images.pexels.com/photos/2271683/pexels-photo-2271683.jpeg?cs=srgb&dl=pexels-felipe-ribeiro-2271683.jpg&fm=jpg);
   background-size: cover;
   margin: 0px;
   height: 50vw;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@ h2.captiontitle {
   font-weight: 100;
   letter-spacing: .75vw;
   font-size: 2.5vw;
-  color: white;
+  color:#50fa7b;
   text-shadow: 0px 2px 2px rgba(150, 150, 150, .5);
   animation-name: subheadenter;
   animation-duration: 5s;
@@ -139,6 +139,7 @@ h2.captiontitle {
   75% {opacity: .75;}
   100%{opacity: 1;}
 } 
+/* end of hero image */
 
 /* ul {
   margin-left: -200px;
@@ -1665,19 +1666,19 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: #50fa7b !important;
 	}
 
 	form :-moz-placeholder {
-		color: #555 !important;
+		color: #50fa7b !important;
 	}
 
 	form ::-moz-placeholder {
-		color: #555 !important;
+		color: #50fa7b !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: #555 !important;
+		color: #50fa7b !important;
 	}
 
 	form ::-moz-focus-inner {

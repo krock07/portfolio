@@ -16,11 +16,12 @@ import "./Skills.css"
 const Skills = () => {
     return (
         <div className="skills-section" id="skills">
-            <div class="card">
+            <div class="contain">
+         <div class="card">
         <div class="card-content">
           <h4 class="brown-text light">HTML</h4>
-          <div class="row text-center">
-            <div class="col s4 m2">
+          <div className="rows text-center">
+            <div className="col s4 m2">
             <img className="icon solid featured" src={html} alt="react logo" class="responsive-img"/>HTML 5
             </div>
             <div class="col s4 m2">
@@ -32,7 +33,7 @@ const Skills = () => {
       <div class="card">
         <div class="card-content">
           <h4 class="brown-text light">CSS</h4>
-          <div class="row text-center">
+          <div class="rows text-center">
             <div class="col s4 m2">
             <img className="icon solid featured" src={css3} alt="CSS logo" class="responsive-img"/> CSS3
             </div>
@@ -54,7 +55,7 @@ const Skills = () => {
       <div class="card">
         <div class="card-content">
           <h4 class="brown-text light">Back-End</h4>
-          <div class="row text-center">
+          <div class="rows text-center">
             <div class="col s4 m2">
             <img className="icon solid featured" src={ruby} alt="ruby logo" class="responsive-img"/> Ruby
             </div>
@@ -69,6 +70,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
         {/* <section id="intro" class="container">
         <div class="row">

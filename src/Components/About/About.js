@@ -8,9 +8,9 @@ const About = () => {
         <div class="inner-container">
             <h1>About Me</h1>
             <p class="text">
-                Hey, my name is Khoury. I'm a Software Engineer. I love Call of Duty and if  I use the shotgun you won't have a chance. Once upon a time I thought I was going to be a professional football player obviously that didn't happen but I'd bet that I am the fastest developer you ever met. We can race at anytime!
+                Hey, my name is Khoury. I'm a Software Engineer. I love Call of Duty, and if I use the shotgun you won't have a chance. Once upon a time I thought, I was going to be a professional football player. Obviously that didn't happen but I'd bet that I am the fastest developer you ever met. We can race at anytime!
 
-				As a Frontend developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. 
+				As a Frontend Developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. 
             </p>
             <div class="skills">
                 <span>Frontend Developer</span>

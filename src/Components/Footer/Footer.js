@@ -12,7 +12,7 @@ class Footer extends Component {
 					<li><a href="http://linkedin.com/in/khourysmith/">Linkedin</a></li>
 					<li><a href="http://github.com/krock07">Github</a></li>
 				</ul>
-				<p class="push-top">Made in <span data-toggle="tooltip" title="" data-original-title="Miami Florida Yo!">in the 305</span> &amp; © <a href="http://khourysmith.com">Khoury Smith</a></p>
+				<p class="push-top">Made in <span data-toggle="tooltip" title="" data-original-title="Miami Florida Yo!">the 305</span> &amp; © <a href="http://khourysmith.com">Khoury Smith</a></p>
 			</div>
 		</footer>
         </div>
