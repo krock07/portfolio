@@ -42,6 +42,34 @@
 
 }
 
+@media screen and (max-width:600px){
+  .h2:after{
+    position: absolute;
+    top: 50%;
+    display: block;
+      width: 25%;
+      border-bottom: 5px solid #50fa7b;
+      content: "";
+      right: 0;
+  }
+}
+
+  @media screen and (max-width:600px){
+    .h2:before{
+      position: absolute;
+      top: 50%;
+      display: block;
+        width: 25%;
+        border-bottom: 5px solid #50fa7b;
+        content: "";
+        left: 0;
+    }
+  }
+  .inner-container{
+      padding: 60px;
+  }
+
+
 .text-30{
   font-size: 18px;
 }
